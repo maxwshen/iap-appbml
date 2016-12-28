@@ -1,9 +1,8 @@
 # Discrete Mixture model
 
 import sys, math
-import numpy as np, pandas as pd
+import numpy as np
 import pystan
-import matplotlib.pyplot as plt
 
 
 def simulate():
@@ -26,8 +25,8 @@ def simulate():
     'DIM': DIM,
     'obs': obs,
   }
-
   return data_list
+
 
 def inference(data):
   print '\tPerforming inference...'
@@ -37,11 +36,17 @@ def inference(data):
   NUM_CORES = 1
   STAN_FN = 'a_discretemixturemodel.stan'
 
-  fit = pystan.stan(file = STAN_FN, data = data, iter = NUM_ITER, warmup = WARMUP, chains = NUM_CHAINS, n_jobs = NUM_CORES)
+  fit = pystan.stan(file = STAN_FN, 
+                    data = data, 
+                    iter = NUM_ITER, 
+                    warmup = WARMUP, 
+                    chains = NUM_CHAINS, 
+                    n_jobs = NUM_CORES)
+
   print(fit)
 
   fit.plot()
-  plt.savefig('fig.png')
+  # plt.savefig('fig.png')
 
   return
 
