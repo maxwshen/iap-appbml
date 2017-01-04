@@ -28,6 +28,7 @@ We recommend Anaconda (https://www.continuum.io/downloads) as an OS-agnostic sol
 To install R without root, see here: http://unix.stackexchange.com/posts/149455/revisions
 
 To install RStan for Linux/Mac: https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Mac-or-Linux
+
 To install RStan for Windows: https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows
 
 \* Note: Python code is written for 2.7, but is easy to convert to Python 3 compatible code if needed.
