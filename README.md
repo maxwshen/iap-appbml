@@ -9,17 +9,25 @@ This repository is a collection of material designed for a 2017 IAP class at MIT
 The material is largely a "remixing" of two textbooks: Statistical Rethinking, and Bayesian Data Analysis 3.
 
 # Installation:
-Required Software: 
-- Python 2.7
+Required Software:
+- Git (optional)
+- Python 2.7\*
 - pystan
 - R
 - RStan.
 
+If you have Git, you can clone this repository. If you do not, you can download this repository as a compressed folder. 
+Git installation guide: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
 We recommend Anaconda (https://www.continuum.io/downloads) as an OS-agnostic solution to installing Python and pystan without administrative privileges. For Windows users, Anaconda also provides a GUI. Once you have anaconda, you can install pystan without root by using:
+
+```
 > conda install -c anaconda pystan
+```
 
 To install R without root, see here: http://unix.stackexchange.com/posts/149455/revisions
 
+To install RStan for Linux/Mac: https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Mac-or-Linux
+To install RStan for Windows: https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Windows
 
-
-Python code is written for 2.7, but is easy to convert to Python 3 compatible code if needed.
+\* Note: Python code is written for 2.7, but is easy to convert to Python 3 compatible code if needed.
