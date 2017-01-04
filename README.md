@@ -25,7 +25,7 @@ We recommend Anaconda (https://www.continuum.io/downloads) as an OS-agnostic sol
 > conda install -c anaconda pystan
 ```
 
-To install R without root, see here: http://unix.stackexchange.com/posts/149455/revisions
+To install R without root, see here: http://unix.stackexchange.com/posts/149455
 
 To install RStan for Linux/Mac: https://github.com/stan-dev/rstan/wiki/Installing-RStan-on-Mac-or-Linux
 
