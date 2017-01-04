@@ -18,7 +18,8 @@ def simulate():
     print exp_draw
     for j in range(D):
       observations[i][j] = normal_sigma * np.random.randn() + exp_draw
-
+      
+  # Construct dictionary to pass to Stan
   dataset = {
     'N': N,
     'D': D,
@@ -29,13 +30,12 @@ def simulate():
 
 def inference(dataset):
   print '\tPerforming inference...'
-  NUM_ITER = 2000
-  WARMUP = 200
+  NUM_ITER = 1000
+  WARMUP = 500
   NUM_CHAINS = 4
   NUM_CORES = 4
   STAN_FN = 'hierarchical_model_1-1.stan'
 
-  # import pdb; pdb.set_trace()
   fit = pystan.stan(file = STAN_FN, 
                     data = dataset, 
                     iter = NUM_ITER, 
@@ -46,7 +46,7 @@ def inference(dataset):
 
   fit.plot()
   plt.tight_layout()
-  plt.savefig('fit.png')
+  plt.savefig('fit_pystan.png')
 
   normal_mus = fit['normal_mus'][-1]
   print normal_mus

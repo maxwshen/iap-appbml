@@ -26,13 +26,12 @@ def simulate():
 
 def inference(dataset):
   print '\tPerforming inference...'
-  NUM_ITER = 2000
-  WARMUP = 200
+  NUM_ITER = 1000
+  WARMUP = 500
   NUM_CHAINS = 4
   NUM_CORES = 4
   STAN_FN = 'hierarchical_model_1-1.stan'
 
-  # import pdb; pdb.set_trace()
   fit = pystan.stan(file = STAN_FN, 
                     data = dataset, 
                     iter = NUM_ITER, 
