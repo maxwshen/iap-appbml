@@ -32,7 +32,7 @@ def inference(dataset):
 
   fit.plot()
   plt.tight_layout()
-  plt.savefig('fit.png')
+  plt.savefig('fit_pystan.png')
   return
 
 

@@ -9,12 +9,12 @@ def simulate():
   print '\tGenerating simulated data...'
   N = 15
   D = 30
-  exponential_lambda = 10
+  exponential_scale = 10
   normal_sigma = 1
 
   observations = np.zeros((N, D))
   for i in range(N):
-    exp_draw = np.random.exponential(scale = exponential_lambda)
+    exp_draw = np.random.exponential(scale = exponential_scale)
     print exp_draw
     for j in range(D):
       observations[i][j] = normal_sigma * np.random.randn() + exp_draw

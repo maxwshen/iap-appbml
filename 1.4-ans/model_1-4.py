@@ -25,8 +25,8 @@ def simulate():
 
 def inference(dataset):
   print '\tPerforming inference...'
-  NUM_ITER = 2000
-  WARMUP = 200
+  NUM_ITER = 1000
+  WARMUP = 500
   NUM_CHAINS = 4
   NUM_CORES = 4
   STAN_FN = 'model_1-4.stan'
@@ -42,7 +42,7 @@ def inference(dataset):
 
   fit.plot()
   plt.tight_layout()
-  plt.savefig('fit.png')
+  plt.savefig('fit_pystan.png')
   return
 
 

@@ -1,3 +1,5 @@
+# Exercise 3
+
 data {
   int N;
   int D;
