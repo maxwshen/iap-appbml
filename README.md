@@ -8,6 +8,10 @@ This repository is a collection of material designed for a 2017 IAP class at MIT
 
 The material is largely a "remixing" of two textbooks: Statistical Rethinking, and Bayesian Data Analysis 3.
 
+# Presentations:
+Powerpoint slides, which discuss topics both included and not included in the course material, are available here:
+https://www.dropbox.com/sh/zph738h4a0x4a1v/AACkZaOHxqjnDAjhq4s-hFala?dl=0
+
 # Installation:
 Required Software:
 - Git (optional)
