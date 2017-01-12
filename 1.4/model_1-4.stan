@@ -14,6 +14,4 @@ transformed parameters {
 
 model {
   observations ~ normal(mu_a + mu_b, sigma); 
-  mu_a ~ normal(0, 100);
-  mu_b ~ normal(0, 100);
 }
