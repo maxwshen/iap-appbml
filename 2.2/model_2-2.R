@@ -49,6 +49,7 @@ log_lik1 <- fe1$log_lik
 fe2 <- extract(fit2);
 log_lik2 <- fe2$log_lik
 
+library('loo');
 waic(log_lik1);
 waic(log_lik2);
 
